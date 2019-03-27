@@ -1,0 +1,30 @@
+#define WHITE 70
+#define BLACK 38
+#define POWER 1.75
+#define NEAR 20
+
+task main()
+{
+ SetSensorLight(IN_3);
+ SetSensorLowspeed(IN_4);
+
+ while(true)
+ {
+  int motorA, motorC;
+  int sensorLight = Sensor(IN_3);
+  int sensorUltra = SensorUS(IN_4);
+  
+    //Off(OUT_AC);
+   //Motor C- Left motor
+   motorC=(WHITE - sensorLight)*POWER;
+   //Motor A- Right motor
+   motorA=(sensorLight - BLACK)*POWER;
+   OnFwd(OUT_A, motorA);
+   //Wait(50);
+   OnFwd(OUT_C, motorC);
+   //Wait(50);
+   }
+  //OnFwd(OUT_A, 70);
+  //Wait(100);
+ }
+}
