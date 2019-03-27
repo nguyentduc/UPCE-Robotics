@@ -1,0 +1,158 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0SetSensorLight_inline_main	6	1	0	4	2
+1	__D0main	6	1	4	4	22
+2	__DU0SetSensorLight_inline_main	5	1	8	4	5
+3	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	12	4	2
+4	__signed_stack_001main	6	1	16	4	4
+5	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	20	1	2
+6	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	21	1	2
+7	____initialize_global_data_return	1	1	22	1	3
+8	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	23	1	4
+9	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	24	1	2
+10	__constVal96	2	0	25	1	3
+11	__constVal63	2	0	26	1	3
+12	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	27	1	2
+13	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	28	1	2
+14	__OnRev_Tmp	2	1	29	1	2
+15	__ResetSensorTmp	1	1	30	1	2
+16	____ResetSensorSubroutine_return	1	1	31	1	3
+17	__constVal3	2	0	32	1	3
+18	__ResetSensorPort	1	1	33	1	3
+19	__constVal2	2	0	34	1	3
+20	__constVal1	2	0	35	1	2
+21	__constVal32	2	0	36	1	9
+22	__PFTmp	1	1	37	1	1
+23	__constVal0	2	1	38	1	9
+24	__OUT_AC	7	0	40	4	2
+25	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	4	0	#line 4 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	5	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	4	2	#line 4 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	4	2	#line 4 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	5	2		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 2
+0	4	5	#line 4 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	5	5	#line 5 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	6	5		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	7	#line 4313 "NXCDefs.h"
+0	4314	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	9	#line 4313 "NXCDefs.h"
+0	4313	9	#line 4313 "NXCDefs.h"
+0	4314	9		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	11	#line 4313 "NXCDefs.h"
+0	4314	11		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	14	#line 4313 "NXCDefs.h"
+0	4314	14		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	17	#line 4313 "NXCDefs.h"
+0	4314	17		set __DU0SetSensorLight_inline_main, 5
+0	4313	20	#line 4313 "NXCDefs.h"
+0	4313	20	#line 4313 "NXCDefs.h"
+0	4314	20		jmp __001__ASM_Label_5
+0	4313	22	#line 4313 "NXCDefs.h"
+0	4314	22		set __DU0SetSensorLight_inline_main, 6
+0	4313	25	#line 4313 "NXCDefs.h"
+0	4313	25	#line 4313 "NXCDefs.h"
+0	4314	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	27	#line 4247 "NXCDefs.h"
+0	4248	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	31	#line 4247 "NXCDefs.h"
+0	4314	31	#line 4314 "NXCDefs.h"
+0	4314	31	#line 4314 "NXCDefs.h"
+0	4315	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	33	#line 4314 "NXCDefs.h"
+0	4314	33	#line 4314 "NXCDefs.h"
+0	4315	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	36	#line 4314 "NXCDefs.h"
+0	4260	36	#line 4260 "NXCDefs.h"
+0	4261	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	40	#line 4260 "NXCDefs.h"
+0	4315	40	#line 4315 "NXCDefs.h"
+0	4315	40	#line 4315 "NXCDefs.h"
+0	4315	40	#line 4315 "NXCDefs.h"
+0	4278	40	#line 4278 "NXCDefs.h"
+0	4279	40	#pragma macro 4
+0	4279	40		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3656	44	#line 3656 "NXCDefs.h"
+0	4278	44	#line 4278 "NXCDefs.h"
+0	4316	44	#line 4316 "NXCDefs.h"
+0	5	44	#line 5 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	5	44	#line 5 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	6	44		set __D0main, 30
+0	7	47	#line 7 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	8	47	#pragma macro 7
+0	8	47		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3663	70	#line 3663 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	7	70	#line 7 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	8	70	#line 8 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	9	70		set __D0main, 1
+0	9	73	#line 9 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	10	73		tst 5, __D0main, __D0main
+0	9	76	#line 9 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	10	76		brtst 4, __ASM_Label_494, __D0main
+0	9	79	#line 9 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	10	79		getin __signed_stack_001main, __constVal2, 4
+0	9	83	#line 9 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	10	83	#line 10 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	11	83		set __D0main, 50
+0	10	86	#line 10 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	11	86		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	11	90	#line 11 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	12	90		brtst 4, __ASM_Label_499, __D0main
+0	11	93	#line 11 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	12	93		set __D0main, 30
+0	12	96	#line 12 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	13	96	#pragma macro 10
+0	13	96		neg __OnRev_Tmp, __D0main
+0	13	99		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3689	122	#line 3689 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	12	122	#line 12 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	12	122	#line 12 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	13	122		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
+0	12	125	#line 12 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	8551	125	#line 8551 "NXCDefs.h"
+0	8552	125		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	128	#line 8551 "NXCDefs.h"
+0	13	128	#line 13 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	13	128	#line 13 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	14	128		getin __signed_stack_001main, __constVal2, 4
+0	13	132	#line 13 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	13	132	#line 13 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	14	132		set __D0main, 50
+0	13	135	#line 13 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	14	135		cmp 2, __D0main, __signed_stack_001main, __D0main
+0	13	139	#line 13 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	14	139		not __D0main, __D0main
+0	14	142	#line 14 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	15	142		tst 5, __D0main, __D0main
+0	14	145	#line 14 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	15	145		brtst 4, __ASM_Label_505, __D0main
+0	14	148	#line 14 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	14	148	#line 14 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	15	148		jmp __ASM_Label_504
+0	14	150	#line 14 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	14	150	#line 14 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	15	150		set __D0main, 30
+0	15	153	#line 15 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	16	153	#pragma macro 7
+0	16	153		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3732	176	#line 3732 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	15	176	#line 15 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	17	176	#line 17 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	19	176	#line 19 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	20	176		jmp __ASM_Label_493
+0	19	178	#line 19 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+0	20	178		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	20	0	#line 20 "D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc"
+2	21	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc
+1	__ResetSensorSubroutine	181	NXTDefs.h
+2	__initialize_global_data	194	D:\OneDrive - Vaasan ammattikorkeakoulu\2018-2019\UPCE\Robotics\Lightsensor.nxc
