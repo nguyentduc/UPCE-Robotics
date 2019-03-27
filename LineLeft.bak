@@ -1,0 +1,63 @@
+//Lineleft1
+
+#define WHITE 70
+#define BLACK 38
+#define POWER 1.8
+#define NEAR 33
+
+void followLine(int sensorLight)
+{
+	//Motor C- Left motor
+	int motorC=(WHITE - sensorLight)*POWER;
+
+	//Motor A- Right motor
+	int motorA=(sensorLight - BLACK)*POWER;
+
+	OnFwd(OUT_A, motorA);
+	//Wait(50);
+	OnFwd(OUT_C, motorC);
+	//Wait(50);
+}
+
+
+void avoidObtacle()
+{
+	//Turn LEFT
+	OnFwd(OUT_A, 60);
+  //OnRev(OUT_C,30);
+	Wait(600);
+	OnFwd(OUT_AC,50);
+	Wait(3500);
+	Off(OUT_AC);
+
+	//Turn RIGHT
+	//OnFwd(OUT_C,50);
+	//Wait(500);
+	//OnFwd(OUT_AC,50);
+	//Wait(1000);
+	//Off(OUT_AC);
+}
+task main()
+{
+	SetSensorLight(IN_3);
+	SetSensorLowspeed(IN_4);
+
+	while(true)
+	{
+
+		int sensorLight = Sensor(IN_3);
+		int sensorUltra = SensorUS(IN_4);
+
+
+    if( SensorUS(IN_4) <=NEAR)
+    {
+        Off(OUT_AC);
+        avoidObtacle();
+    //until(sensorLight<WHITE);
+    //followLine(sensorLight);
+    }
+    else
+        followLine(sensorLight);
+
+	}
+}

@@ -1,0 +1,65 @@
+//Lineleft-DUc
+
+#define WHITE 70		// Variable for light sensor
+#define BLACK 38		// Variable for light sensor
+#define POWER 1.8		// Motor Power
+#define NEAR 33			// Distance for ultrasonic sensor
+#define MOVE_TIME 1900  // Time for a straight move
+#define TURN_TIME 720  	// Time for turning 90 degrees
+
+void followLine(int sensorLight)
+{
+	//Motor C- Left motor
+	int motorC=(WHITE - sensorLight)*POWER;
+
+	//Motor A- Right motor
+	int motorA=(sensorLight - BLACK)*POWER;
+
+	OnFwd(OUT_A, motorA);
+	//Wait(50);
+	OnFwd(OUT_C, motorC);
+	//Wait(50);
+}
+
+
+void avoidObtacle()
+{
+	//Turn left
+	OnFwd(OUT_A, 55);
+	OnFwd(OUT_C, 0);
+	Wait(TURN_TIME);
+	OnFwd(OUT_AC, 50);
+	Wait(MOVE_TIME);
+	Off (OUT_AC);
+	Wait (1);
+
+	//Turn right
+	OnFwd(OUT_A, 0);
+	OnFwd(OUT_C, 40);
+	Wait(TURN_TIME);
+	nFwd(OUT_AC, 50);
+	Wait (1000);
+}
+task main()
+{
+	SetSensorLight(IN_3);
+	SetSensorLowspeed(IN_4);
+
+	while(true)
+	{
+
+		int sensorLight = Sensor(IN_3);
+		int sensorUltra = SensorUS(IN_4);
+
+
+    if( SensorUS(IN_4) <=NEAR)
+    {
+        Off(OUT_AC);
+        avoidObtacle();
+    
+    }
+    else
+        followLine(sensorLight);
+
+	}
+}
